@@ -1,6 +1,6 @@
 # HTML Forms
 ## What are forms?
-The form tag is used to group certain inputs together to be submitted. This is a way to take input from the user and send it to another file for processing. A sample can be found [here](/HTML%20Tutorial/2.%20HTML%20Forms/HTML%20Forms.html).
+The form tag is used to group certain inputs together to be submitted. This is a way to take input from the user and send it to another file for processing. A sample can be found [here](/HTML%20Tutorial/2.%20HTML%20Forms/1.%20Basic%20HTML%20Forms.html).
 
 ![](/HTML%20Tutorial/2.%20HTML%20Forms/images/HTML%20Form.png)
 
@@ -12,3 +12,30 @@ The `<input type="submit" value="Submit Form">` is the submit button for the for
 
 ## Output
 ![](/HTML%20Tutorial/2.%20HTML%20Forms/images/HTML%20Form%20Output.png)
+
+## More advanced input types
+[Check the example here](/HTML%20Tutorial/2.%20HTML%20Forms/images/2.%20More%20Advanced%20Input%20Types.html)
+
+![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Password%20HTML.png)
+
+![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Password%20Output.png)
+
+Inputs with `type=”password”` hide the string written inside them.
+
+![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Number%20HTML.png)
+
+![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Number%20Output.png)
+
+Inputs with `type=”number”` only accept numeric inputs.
+
+![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Date%20HTML.png)
+
+![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Date%20Output.png)
+
+Inputs with `type=”date”` accepts a formatted date and opens up a calendar when clicked.
+
+![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Email%20HTML.png)
+
+![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Email%20Output.png)
+
+Inputs with `type=”email”` only accepts properly formatted emails.

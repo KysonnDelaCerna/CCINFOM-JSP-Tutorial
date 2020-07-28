@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+</head>
+<body>
+    <form action="/processing.jsp" method="GET">
+        <!-- Inputs with type=”password” hide the string written inside them. -->
+        <label for="password">Password: </label>
+        <input type="password" id="password"><br><br>
+
+        <!-- Inputs with type=”number” only accept numeric inputs. -->
+        <label for="age">Age: </label>
+        <input type="number" id="age"><br><br>
+
+        <!-- Inputs with type=”date” accepts a formatted date and opens up a calendar when clicked. -->
+        <label for="dateofbirth">Date of Birth: </label>
+        <input type="date" id="dateofbirth"><br><br>
+
+        <!-- Inputs with type=”email” only accepts properly formatted emails. -->
+        <label for="emailaddress">Email Address: </label>
+        <input type="email" id="emailaddress"><br><br>
+
+        <input type="submit" value="Submit Form">
+    </form>
+</body>
+</html>
