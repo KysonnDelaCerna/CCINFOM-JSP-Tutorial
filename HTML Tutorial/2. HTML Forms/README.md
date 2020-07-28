@@ -1,8 +1,8 @@
 # HTML Forms
 ## What are forms?
-The form tag is used to group certain inputs together to be submitted. This is a way to take input from the user and send it to another file for processing. A sample can be found [here](/HTML%20Tutorial/1.%20HTML%20Forms/HTML%20Forms.html).
+The form tag is used to group certain inputs together to be submitted. This is a way to take input from the user and send it to another file for processing. A sample can be found [here](/HTML%20Tutorial/2.%20HTML%20Forms/HTML%20Forms.html).
 
-![](/HTML%20Tutorial/1.%20HTML%20Forms/images/HTML%20Form.png)
+![](/HTML%20Tutorial/2.%20HTML%20Forms/images/HTML%20Form.png)
 
 The `<label for="fullname"></label>` creates a text label for a certain input. In this case, the `for="fullname` attribute defines which input the label is bound to (i.e. `<input type="text" id="fullname" name="fullname" required>`). When the user clicks the label, it will automatically highlight the input with an id matching its for attribute.
 
@@ -11,4 +11,4 @@ The `<input type="text" id="fullname" name="fullname" required>` allows the user
 The `<input type="submit" value="Submit Form">` is the submit button for the form. The `type="submit"` indicates that this is a submit button. The `value="Submit Form"` defines what will be written on the button.
 
 ## Output
-![](/HTML%20Tutorial/1.%20HTML%20Forms/images/HTML%20Form%20Output.png)
+![](/HTML%20Tutorial/2.%20HTML%20Forms/images/HTML%20Form%20Output.png)
