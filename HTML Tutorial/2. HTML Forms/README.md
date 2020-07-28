@@ -14,7 +14,7 @@ The `<input type="submit" value="Submit Form">` is the submit button for the for
 ![](/HTML%20Tutorial/2.%20HTML%20Forms/images/HTML%20Form%20Output.png)
 
 ## More advanced input types
-[Check the example here](/HTML%20Tutorial/2.%20HTML%20Forms/images/2.%20More%20Advanced%20Input%20Types.html)
+[Check the example here](/HTML%20Tutorial/2.%20HTML%20Forms/2.%20More%20Advanced%20Input%20Types.html)
 
 ![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Password%20HTML.png)
 
