@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+</head>
+<body>
+    <!--
+        The form tag is used to group certain inputs together to be submitted.
+        This is a way to take input from the user and send it to another file for processing.
+
+        The action="/processing.jsp" defines where the data collected in the form will be submitted once the user
+        submits the form
+
+        The method attribute is used to define what method will be used when submitting the data (either GET or POST).
+        The main difference between the two is that when a user submits data using the GET method, the data will just be
+        appended to the URL. On the other hand, the POST method sends it through a more secure way. Because of this, the
+        POST method is used for transferring forms containing sensitive data such as passwords. Since a person's name is not
+        really senstive data, it is safe to just use the GET method.
+    -->
+    <form action="/processing.jsp" method="GET">
+        <!--
+            The label tag creates a text label for a certain input. The for attribute defines which input the label is
+            bound to. When the user clicks the label, it will automatically highlight the input with an id matching its for attribute.
+        -->
+        <label for="fullname">Full Name: </label>
+
+        <!--
+            The input tag allows the user to input data.
+            
+            The type attribute is used to define what type of input is needed from the user (type=”text” is used for plain text inputs).
+            
+            The id attribute allows the label tag to find the input it is tied to.
+
+            The name attribute defines what the value inside the input will be named as once submitted.
+            
+            The required attribute makes it so that the user can’t submit the form while this field is still empty.
+        -->
+        <input type="text" id="fullname" name="fullname" required>
+
+        <!--
+            The input with type=”submit” is the submit button for the form.
+            The string within the value attribute defines what will be written on the button.
+        -->
+        <input type="submit" value="Submit Form">
+    </form>
+</body>
+</html>
