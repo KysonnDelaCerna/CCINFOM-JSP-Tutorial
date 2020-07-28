@@ -1,7 +1,8 @@
 # Basic HTML Structure
 
 ![](/HTML%20Tutorial/1.%20Basic%20HTML%20Structure/images/Sample%20HTML.png)
-This is a [sample of an HTML file](/HTML%20Tutorial/1.%20Basic%20HTML%20Structure/Basic%20HTML%20Tutorial.html). Everything enclosed within `<` and `>` are called tags. Additionally, things enclosed in just `< >` are called opening tags and things enclosed in `</ >` are called closing tags.
+
+This is a [sample of an HTML file](/HTML%20Tutorial/1.%20Basic%20HTML%20Structure/Basic%20HTML%20Structure.html). Everything enclosed within `<` and `>` are called tags. Additionally, things enclosed in just `< >` are called opening tags and things enclosed in `</ >` are called closing tags.
 
 The `<!DOCTYPE html>` indicates that the file is an HTML file. This is to tell your browser that this file is an HTML file and should be interpreted as such. 
 
