@@ -1,8 +1,7 @@
 # Basic HTML Structure
 
 ![](/HTML%20Tutorial/1.%20Basic%20HTML%20Structure/images/Sample%20HTML.png)
-![](/HTML%20Tutorial/1.%20Basic%20HTML%20Structure/images/HTML%20in%20Browser.png)
-This is a sample of an HTML file. Everything enclosed within `<` and `>` are called tags. Additionally, things enclosed in just `< >` are called opening tags and things enclosed in `</ >` are called closing tags.
+This is a [sample of an HTML file](/HTML%20Tutorial/1.%20Basic%20HTML%20Structure/Basic%20HTML%20Tutorial.html). Everything enclosed within `<` and `>` are called tags. Additionally, things enclosed in just `< >` are called opening tags and things enclosed in `</ >` are called closing tags.
 
 The `<!DOCTYPE html>` indicates that the file is an HTML file. This is to tell your browser that this file is an HTML file and should be interpreted as such. 
 
@@ -19,3 +18,6 @@ The `<title></title>` defines what the title of the page should be. This can be 
 Things within `<body></body>` define the content of the web page.
 
 The `<h1></h1>`, which stands for heading, displays the text within it onto the web page. Heading is usually used for important texts inside the web page such as article titles.
+
+# Output
+![](/HTML%20Tutorial/1.%20Basic%20HTML%20Structure/images/HTML%20in%20Browser.png)
