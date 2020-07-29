@@ -15,29 +15,36 @@ One key benefit of JSP is that you can input java codes in HTML like the example
 
 ## Creating a JSP project in NetBeans
 1. Go to File and create a new project, it will prompt you to choose a project select Java Web then web application.
+
 ![](/JSP%20Tutorial/images/Step%201.png)
 
 2. Input the project name and location, then proceed.
+
 ![](/JSP%20Tutorial/images/Step%202.png)
 
 3. After choosing the name and server settings, you are to choose a server. You may use Glassfish or Tomcat, however it is recommended that we should use Tomcat. Do not edit the Jave EE Version! Then click Finish.
+
 ![](/JSP%20Tutorial/images/Step%203.png)
 
 ## Installing JDBC
 After creating the project, you would see the contents of the new project folder. The Web Pages should contain all the HTML and JSP pages. For the source package, it is recommended to name the package. You can do so by right clicking the `<default package>` and selecting java package. Packages are important in JSP files because you may need to call the objects stored inside the package in order to interact with Java Objects. Now we are going to add the sql connector **(JDBC)**. Through JDBC, we can establish a connection to the database, issue mysql queries such as CRUD (Create, Read, Update, Delete) operations. 
+
 ![](/JSP%20Tutorial/images/JDBC%201.png)
 
 To add the sql connector right click on the project name and select properties. Go to the Libraries Category and click add JAR/Folder then select the mysql-connector-java jar. After adding, it should look like this:
+
 ![](/JSP%20Tutorial/images/JDBC%202.png)
 
-**_Note: If you do not have the mysql-connector-java-8.0.18 jar, you may download it [here](https://downloads.mysql.com/archives/c-j/) then follow the [download instructions](##-MySQL-connector-jar-download-guide)_**
+**_Note: If you do not have the mysql-connector-java-8.0.18 jar, you may download it [here](https://downloads.mysql.com/archives/c-j/) then follow the [download instructions](#MySQL-connector-jar-download-guide)_**
 
 ## MySQL connector jar download guide
 1. Select the product version and the OS, (for windows, choose platform independent)
 2. Choose the zip archive and after downloading extract the zip.
+
 ![](/JSP%20Tutorial/images/MySQL%20Connector%201.png)
 
 3. **Only get the JAR FILE.** You do not need the other files. We recommend placing the JAR File under Libraries folder on the project.
+
 ![](/JSP%20Tutorial/images/MySQL%20Connector%202.png)
 
 ![](/JSP%20Tutorial/images/MySQL%20Connector%203.png)
