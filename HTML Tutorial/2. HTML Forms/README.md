@@ -1,4 +1,12 @@
 # HTML Forms
+## Table of Contents
+1. [What are forms?](#What-are-forms?)
+2. [More advance input types](#More-advance-input-types)
+   - [Password inputs](#Password-inputs)
+   - [Number inputs](#Number-inputs)
+   - [Date inputs](#Date-inputs)
+   - [Email inputs](#Email-inputs)
+
 ## What are forms?
 The form tag is used to group certain inputs together to be submitted. This is a way to take input from the user and send it to another file for processing. A sample can be found [here](/HTML%20Tutorial/2.%20HTML%20Forms/1.%20Basic%20HTML%20Forms.html).
 
