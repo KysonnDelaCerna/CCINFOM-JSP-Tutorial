@@ -16,24 +16,34 @@ The `<input type="submit" value="Submit Form">` is the submit button for the for
 ## More advanced input types
 [Check the example here](/HTML%20Tutorial/2.%20HTML%20Forms/2.%20More%20Advanced%20Input%20Types.html)
 
+### Password inputs
 ![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Password%20HTML.png)
 
 ![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Password%20Output.png)
 
 Inputs with `type=”password”` hide the string written inside them.
 
+### Number inputs
 ![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Number%20HTML.png)
 
 ![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Number%20Output.png)
 
 Inputs with `type=”number”` only accept numeric inputs.
 
+![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Float%20HTML.png)
+
+![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Float%20Output.png)
+
+Number inputs with `step="0.01"` accept floating point inputs.
+
+### Date inputs
 ![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Date%20HTML.png)
 
 ![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Date%20Output.png)
 
 Inputs with `type=”date”` accepts a formatted date and opens up a calendar when clicked.
 
+### Email inputs
 ![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Email%20HTML.png)
 
 ![](/HTML%20Tutorial/2.%20HTML%20Forms/images/Email%20Output.png)
