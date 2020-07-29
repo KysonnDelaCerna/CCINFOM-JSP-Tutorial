@@ -39,7 +39,7 @@ Let us describe the code in order:
 
 4. `statement.setInt(1, productID)` - this function tells us that you are specifying that you will append the **1st** `?` with an integer type and the value being appended is the `productID`. It is recommended that you write the code in order of the `?` so that confusion is minimal. 
 
-**Note that the data type of the variable should match the method Java will tell you an error if the method and data type does not match. For more methods of the prepare statement please read the api.**
+**Note that the data type of the variable should match the method Java will tell you an error if the method and data type does not match. For more methods of the prepare statement please read the [API](https://docs.oracle.com/javase/8/docs/api/index.html?java/sql/package-summary.html).**
 
 5. `statement.execute()` - This function allows you to execute the statement from #3. Note that this is only recommended if you are using Insert, Update and Delete operations. It would be a **different** case for querying as you will use `statement.executeQuery()`.
 
@@ -67,3 +67,40 @@ If your product has not been added please check your code. Errors can be:
 Now that you’ve learned the foundations of create, you can also do the [update and delete](#Update-and-delete) easily! You just have to change the statement!
 
 ## Update and delete
+![](/JSP%20Tutorial/1.%20Setting%20Up%20A%20Model/images/Update%20Model%201.png)
+
+![](/JSP%20Tutorial/1.%20Setting%20Up%20A%20Model/images/Update%20Model%202.png)
+
+**It should update the database!**
+
+![](/JSP%20Tutorial/1.%20Setting%20Up%20A%20Model/images/Delete%20Model%201.png)
+
+![](/JSP%20Tutorial/1.%20Setting%20Up%20A%20Model/images/Delete%20Model%202.png)
+
+**The product can no longer be found anymore!**
+
+## Querying
+Now that you know how to create, delete and update, select is quite different from the other operations. Take note that in CUD, you only need to execute it (see the result in the database) however in querying, you want to get the data given to you. Now let’s try to populate our table a bit, you can use mysql for this or use the newly created methods:
+
+![](/JSP%20Tutorial/1.%20Setting%20Up%20A%20Model/images/Querying%20Model%201.png)
+
+Now that the data is populated let’s try to query the data:
+
+![](/JSP%20Tutorial/1.%20Setting%20Up%20A%20Model/images/Querying%20Model%202.png)
+
+As you can see, there are newly added things such as `ResultSet`, `ArrayList`, and a few other commands. Let’s try to break it down a bit:
+1. `ResultSet rs` - This allows you to acquire the query from the `SELECT` statement
+2. `rs = statement.executeQuery()` - This assigns the query to the rs
+3. `while(rs.next())` - you see the value of `rs.next()` is the data from mysql, think of it as rows. If there is a value for the next row, continue on! Now the `rs.next()` does not automatically assign the data to the object, you have to do it manually!
+4. `product.productID = rs.getInt(1)` - Similar to the CUD statement, the number determines the positioning. ***Note that the positioning is based on the mysql columns!*** If you want to check more on the methods available in `ResultSet` please check the [API](https://docs.oracle.com/javase/8/docs/api/index.html?java/sql/package-summary.html)!
+5. `rs.close()` - closing of the `ResultSet` after it is done. Since we already added all the products to the `ArrayList`, we do not need the rs anymore therefore we could close it.
+
+![](/JSP%20Tutorial/1.%20Setting%20Up%20A%20Model/images/Querying%20Model%203.png)
+
+We will now output the contents of the ArrayList returned by the method. You may also create a `toString()` if you want to!
+
+![](/JSP%20Tutorial/1.%20Setting%20Up%20A%20Model/images/Querying%20Model%204.png)
+
+I hope you are able to get the same result as me! If you didn’t take note of the following:
+1. **Positioning** of the fields in the mysql
+3. Data Types should **match**!
