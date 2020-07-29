@@ -23,15 +23,15 @@ Let us describe the code in order:
 1. `Class.forName(“com.mysql.jdbc.Driver”).newInstance();` - You are creating a new driver instance specifying that the database you are to use is MySQL.
 
 2. `connection = DriverManager.getConnection()` - You are telling the driver to establish a connection with the database. The method requires a string parameter. We will discuss the content of the string `"jdbc:mysql://localhost:3307/wintermelon?useSSL=false&useTimezone=true&serverTimezone=Asia/Singapore&user=root&password=p@ssword"`
- - `jdbc:mysql://localhost` is constant. You don’t have to worry about it. However if it is an actual db deployed, you can change the localhost to the ip address.
- - `3307` is the port number, you may be required to change this depending on the port your professor told you.
- - `wintermelon` - this is the name of my schema in mysql. Take note you have to match this to your corresponding schema/db name or else the connection will fail.
- - The following after `?` are query parameters of the url `&` is used to append query parameters to the jdbc link.
-  - The `useSSL` is for communicating with the mysql database using SSL. You can set this to true or false but for now it is recommended to set it to false first.
-  - `useTimezone = true`. (optional) This allows the jdbc to ensure that you will be using a timezone
-  - `serverTimezone = Asia/Singapore`. (optional) You specified that the serverTimezone is using Asia/Singapore. Take note if you do not specify this, the timezone is by default UTC+8, which may affect the data you receive when trying to add date or time via jsp. You can change this depending on the timezone you want but make sure to read the documentation for the available timezones.
-  - `user = root`. **(important)** You can change the root if your database username is different. 
-  - `password = p@ssword`. **(important)** You can change this if your password on mysql is different.
+   - `jdbc:mysql://localhost` is constant. You don’t have to worry about it. However if it is an actual db deployed, you can change the localhost to the ip address.
+   - `3307` is the port number, you may be required to change this depending on the port your professor told you.
+   - `wintermelon` - this is the name of my schema in mysql. Take note you have to match this to your corresponding schema/db name or else the connection will fail.
+   - The following after `?` are query parameters of the url `&` is used to append query parameters to the jdbc link.
+     - The `useSSL` is for communicating with the mysql database using SSL. You can set this to true or false but for now it is recommended to set it to false first.
+     - `useTimezone = true`. (optional) This allows the jdbc to ensure that you will be using a timezone
+     - `serverTimezone = Asia/Singapore`. (optional) You specified that the serverTimezone is using Asia/Singapore. Take note if you do not specify this, the timezone is by default UTC+8, which may affect the data you receive when trying to add date or time via jsp. You can change this depending on the timezone you want but make sure to read the documentation for the available timezones.
+     - `user = root`. **(important)** You can change the root if your database username is different. 
+     - `password = p@ssword`. **(important)** You can change this if your password on mysql is different.
 
 **_Note:  You may be required to change the username and password and port number if submitting to the professor!_**
 
@@ -64,4 +64,6 @@ If your product has not been added please check your code. Errors can be:
 3. Java to mysql connector has not been added to the library
 4. Incorrect connection, make sure to match your mysql database schema and etc.
 
-Now that you’ve learned the foundations of create, you can also do the [update and delete](#Update-and-Delete) easily! You just have to change the statement!
+Now that you’ve learned the foundations of create, you can also do the [update and delete](#Update-and-delete) easily! You just have to change the statement!
+
+## Update and delete
