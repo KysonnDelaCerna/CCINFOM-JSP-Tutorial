@@ -1,5 +1,15 @@
 # JSP Tutorial
 
+## Table of contents
+- [What is JSP?](#What-is-JSP?)
+- [Creating a JSP project in NetBeans](#Creating-a-JSP-project-in-NetBeans)
+- [Installing JDBC](#Installing-JDBC)
+- [MySQL connector jar download guide](#MySQL-connector-jar-download-guide)
+- [Tomcat error guide](#Tomcat-error-guide)
+0. [Sample Project](/JSP%20Tutorial/0.%20Sample%20Project)
+1. [Setting Up a Model](/JSP%20Tutorial/1.%20Setting%20Up%20a%20Model)
+2. [Making a JSP Web Page](/JSP%20Tutorial/2.%20Making%20a%20JSP%20Web%20Page)
+
 ## What is JSP?
 JSP or **J**ava**S**erver **P**ages is a Java Standard Technology that allows you to write dynamic or data-driven pages for Java Web applications. By building on top of Java Servlet Specifications, it allows you to write java codes into HTML files. JSP also has access to powerful Enterprise Java APIs such as **JDBC (Java Database Connectivity)**, **JNDI**, etc.
 
@@ -50,3 +60,24 @@ To add the sql connector right click on the project name and select properties. 
 ![](/JSP%20Tutorial/images/MySQL%20Connector%203.png)
 
 **_Note: In case you decided to move the JAR file it is recommended to check the location again on the project properties. Sometimes it prompts an error saying the JAR file is not present in the directory._**
+
+## Tomcat error guide
+For those who are having an error with their tomcat kindly do the following: 
+1. Right click project name and click on **properties** then go to **Run**. Make sure that the Server is **Apache Tomcat 8.0.3.0** based from NetBeans. If it is then make sure to proceed to the next step. If there is no Apache Tomcat then you might have to reinstall NetBeans and add the Tomcat server alongside the Glassfish!
+2. Read the error: if it says something about `catalina.bat`, do the following:
+   - Go to program files and find the **Apache Software Foundation folder**
+   - Select the folder to the corresponding Tomcat server then go to **bin** then right click the catalina having the windows batch file as type and edit with notepad++ *(make sure to launch the notepad++ in administrator mode)*. CTRL+F and search for `:noJuliConfig` and `:noJuliManager`, you might have to remove the quotations from the set **JavaOPTS** file similar below:
+
+![](/JSP%20Tutorial/images/Tomcat%20Error%201.png)
+
+   - Go back to the previous directory and go to the conf folder. You might have to edit the tomcat-users file using notepad++ by editing the commented roles similar to below:
+
+![](/JSP%20Tutorial/images/Tomcat%20Error%202.png)
+
+   - **IF THE PROBLEM STILL PERSISTS**, search the `%appdata%` folder on your search bar and go to Roaming. Once you are in roaming go to Netbeans folder and go to **version 8.0** folder then **apache-tomcat-8.0.3.0_base** folder then the **conf** folder. Edit the **tomcat-users file** with notepad++ similar to what was done above however with additional modifications:
+
+![](/JSP%20Tutorial/images/Tomcat%20Error%203.png)
+
+***NOTE USERNAME AND PASSWORD CAN BE ACQUIRED FROM NETBEANS SERVERS. GO TO TOOLS>SERVERS>APACHE TOMCAT 8.0.3.0 THEN YOU CAN SEE THE USERNAME AND SHOW PASSWORD***
+
+**However if the problem still persists after doing all the steps above, you may search the problem up online.**
