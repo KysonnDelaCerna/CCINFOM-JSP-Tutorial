@@ -1,0 +1,2 @@
+# Sample Project
+You can grab a copy of the sample project files by downloading or cloning this git repository and navigating to this folder. You can also download the files through [Google Drive](https://drive.google.com/file/d/1411TZKdG-1dnhIYTf1MqMkOb8G1N1rN6/view?usp=sharing).
