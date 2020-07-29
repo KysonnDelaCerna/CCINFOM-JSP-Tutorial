@@ -1,4 +1,12 @@
 # Setting Up A Model
+## Table of contents
+1. [Creating a model](#Creating-a-model)
+2. [Create product method](#Create-product-method)
+3. [Testing the model through main](#Testing-the-model-through-main)
+4. [Update and delete](#Update-and-delete)
+5. [Querying](#Querying)
+
+## Creating a model
 To create a model, go to Source Packages and right click the package, select **new > Java Class**, then input the name of the class. In this example we will go for Product.
 
 ![](/JSP%20Tutorial/1.%20Setting%20Up%20A%20Model/images/Setting%20Model%201.png)
